@@ -11,11 +11,19 @@
 
 <body>
 	<h1>Welcome!</h1>
-	${p}
-
-	<p></p>
-
+		Hello ${p.getFirstName()} ${p.getLastName()}! Thanks for registering.
+		<p></p>
+		Address: ${p.getStreetAddress()}, ${p.getCity()}, ${p.getState()}
+		<p></p>
+		Email: ${p.getEmailAddress()}
+		<p></p>
+		Phone: ${p.getPhoneNumber()}
+		<p></p>
+		Loves coffee: ${p.isLovesCoffee()}
+		<p></p>
+		Lifetime member: ${p.getLifetimeMember()}
+		<p></p>
 	<a class="btn-primary" href="/index">Back to main page</a>
-
+	
 </body>
 </html>

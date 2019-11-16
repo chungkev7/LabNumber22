@@ -5,23 +5,29 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PersonInfo {
-	String firstName;
-	String lastName;
-	String emailAddress;
-	String phoneNumber;
-	String passWord;
-	boolean lovesCoffee;
-	String lifetimeMember;
+	private String firstName;
+	private String lastName;
+	private String streetAddress;
+	private String city;
+	private String state;
+	private String emailAddress;
+	private String phoneNumber;
+	private String passWord;
+	private boolean lovesCoffee;
+	private String lifetimeMember;
 
 	public PersonInfo() {
 		super();
 	}
 
-	public PersonInfo(String firstName, String lastName, String emailAddress, String phoneNumber, String passWord,
-			boolean lovesCoffee, String lifetimeMember) {
+	public PersonInfo(String firstName, String lastName, String streetAddress, String city, String state,
+			String emailAddress, String phoneNumber, String passWord, boolean lovesCoffee, String lifetimeMember) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.streetAddress = streetAddress;
+		this.city = city;
+		this.state = state;
 		this.emailAddress = emailAddress;
 		this.phoneNumber = phoneNumber;
 		this.passWord = passWord;
@@ -43,6 +49,30 @@ public class PersonInfo {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getStreetAddress() {
+		return streetAddress;
+	}
+
+	public void setStreetAddress(String streetAddress) {
+		this.streetAddress = streetAddress;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
 	}
 
 	public String getEmailAddress() {
@@ -77,20 +107,12 @@ public class PersonInfo {
 		this.lovesCoffee = lovesCoffee;
 	}
 
-	
 	public String getLifetimeMember() {
 		return lifetimeMember;
 	}
 
 	public void setLifetimeMember(String lifetimeMember) {
 		this.lifetimeMember = lifetimeMember;
-	}
-
-	@Override
-	public String toString() {
-		return "Hello " + firstName + " " + lastName + "! Thanks for registering." + "<p></p>" + "Email: "
-				+ emailAddress + "<p></p>" + "Phone: " + phoneNumber + "<p></p>" + "Loves coffee: " + lovesCoffee +
-				"<p></p>" + "Lifetime member: " + lifetimeMember;
 	}
 
 }

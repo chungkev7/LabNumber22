@@ -19,7 +19,7 @@ public class RegistrationController {
 	}
 	
 	@PostMapping("/summary-page")
-	public ModelAndView SummaryInfo(PersonInfo pPerson) {
+	public ModelAndView showInfo(PersonInfo pPerson) {
 		return new ModelAndView("summarypage", "p", pPerson);
 	}
 }
