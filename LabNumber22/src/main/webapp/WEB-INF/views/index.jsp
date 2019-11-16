@@ -17,7 +17,6 @@
 		<h1>Welcome to GC Coffee</h1>
 
 		<a class="btn-primary" href="/registerform">Register here</a>
-
 		<p></p>
 		<img
 			src="https://images.pexels.com/photos/434213/pexels-photo-434213.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"

@@ -8,6 +8,8 @@
 
 <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-T5jhQKMh96HMkXwqVMSjF3CmLcL1nT9//tCqu9By5XSdj7CwR0r+F3LTzUdfkkQf" crossorigin="anonymous">
 	
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 </head>
 <body>
 
@@ -86,15 +88,15 @@
 			<p></p>
 			Phone number: <input type = "text" id = "phone" name="phoneNumber" required>
 			<p></p>
-			Password: <input type = "password" id = "password" name = "passWord" onkeyup = "colorPassword()" required minlength="3">
+			Password: <input type = "password" id = "password" name = "passWord" onkeyup = "confirmPassword()" required minlength="3">
 			<small class="form-text text-muted">Please use a unique password that you don't use for other logins</small>
 			<p></p>
-			Confirm password: <input type = "password" id = "confirm_password" onkeyup = "colorPassword()" required minlength="3">
+			Confirm password: <input type = "password" id = "confirm_password" onkeyup = "confirmPassword()" required minlength="3">
 			<span id='message'></span>
 			<p></p>
-			Check this box if you <span style = "color: red"><em>love</em></span> coffee: <input type="checkbox" name="lovesCoffee">
+			Check this box if you <span id = "love">love</span> coffee: <input type="checkbox" name="lovesCoffee">
 			<p></p>
-			<h4>Would you like to be a <strong>lifetime member</strong>?</h4>
+			<h4 id = "lifetime">Would you like to be a lifetime member?</h4>
     		<div class="form-check">
       			<label class="form-check-label">
          		 <input type="radio" class="form-check-input" name="lifetimeMember" value = "yes" required>

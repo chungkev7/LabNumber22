@@ -37,9 +37,9 @@ function validPhone() {
 }
 
 //This function checks to see if the passwords are the same, if not, the user will not be able to click the submit button
-function colorPassword() {
-	  if (document.getElementById("password").value ==
-	    document.getElementById("confirm_password").value) {
+//Colored message to indicate if the passwords do match
+function confirmPassword() {
+	  if (document.getElementById("password").value === document.getElementById("confirm_password").value) {
 	    document.getElementById("message").style.color = 'green';
 	    document.getElementById("message").innerHTML = 'Passwords are matching';
 	    document.getElementById("submit").disabled = false;

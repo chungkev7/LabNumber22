@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+
+.container {
+	background-color: LightCyan;
+}
+
+#love {
+	color: red;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#lifetime {
+	font-family: Brush Script MT, Brush Script Std, cursive;
+	border-width: 3px;  
+    border-style: groove;
+    text-shadow: 2px 2px 2px #ff0000;
+}
